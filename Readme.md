@@ -44,3 +44,12 @@ The model follows the original Transformer design:
 
 ```bash
 Output shape: (64, 50, 8000)
+
+
+##Future Improvements
+Add real dataset training (text corpus)
+Add tokenizer (BPE / SentencePiece)
+Add beam search decoding
+Add model saving/loading
+Add inference API
+Add training pipeline + metrics (BLEU score)
