@@ -1,17 +1,4 @@
-"""
-masks.py — Mask utilities for the Transformer.
 
-Three mask types used during training:
-
-  1. Padding mask   — hides PAD tokens (value 0) in the encoder input.
-  2. Look-ahead mask — prevents the decoder from seeing future tokens
-                       (causal / autoregressive masking).
-  3. Combined mask  — merges both for the decoder's first self-attention
-                       sub-layer (masked self-attention).
-
-All masks use the convention that 1 = "block this position" so that
-multiplying by -1e9 and adding to logits drives softmax weights to ~0.
-"""
 
 import tensorflow as tf
 
